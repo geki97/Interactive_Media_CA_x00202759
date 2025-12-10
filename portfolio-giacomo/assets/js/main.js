@@ -119,12 +119,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ===== 5. DOWNLOAD CV FUNCTIONALITY =====
+    // CV download is handled by the download attribute on the link element
     const downloadCvBtn = document.getElementById('downloadCvBtn');
     if (downloadCvBtn) {
-        downloadCvBtn.addEventListener('click', function() {
-            // Create a simple CV download (in production, link to actual CV file)
-            console.log('CV download triggered');
-            alert('CV download functionality would be implemented here. \nIn production, this would trigger a download of your actual CV file.');
+        downloadCvBtn.addEventListener('click', function(e) {
+            // The download attribute will trigger browser download
+            const link = document.createElement('a');
+            link.href = 'CV Giacomo Festa Marzotto.pdf';
+            link.download = 'CV Giacomo Festa Marzotto.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         });
     }
 
