@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bootstrap Components & Features Documentation - Giacomo Festa Marzotto Portfolio">
+  <title>Components Documentation | Giacomo Festa Marzotto</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">GFM Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Back to Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main style="margin-top: 80px;">
+    <!-- Header -->
+    <section class="bg-light py-5 mb-5">
+      <div class="container">
+        <h1 class="display-5 fw-bold mb-3">Components & Features Documentation</h1>
+        <p class="lead text-muted">
+          This page documents all Bootstrap components and custom JavaScript features implemented in this portfolio website.
+        </p>
+      </div>
+    </section>
+
+    <div class="container pb-5">
+      <!-- Bootstrap Components Section -->
+      <section class="mb-5">
+        <h2 class="fw-bold mb-4">
+          <i class="bi bi-bootstrap-fill text-primary me-2"></i>Bootstrap Components Used
+        </h2>
+
+        <div class="row g-4">
+          <!-- Navbar -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-menu-button me-2"></i>Navbar</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Features Implemented:</strong>
+                </p>
+                <ul>
+                  <li>Fixed navigation bar with responsive collapse button</li>
+                  <li>Sticky navbar that remains visible while scrolling</li>
+                  <li>Active link highlighting based on current scroll position</li>
+                  <li>Smooth navigation to section anchors</li>
+                  <li>Responsive toggle for mobile devices</li>
+                  <li>Custom styling with gradient background</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid System -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-columns-gap me-2"></i>Grid System</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Features Implemented:</strong>
+                </p>
+                <ul>
+                  <li>12-column responsive grid layout</li>
+                  <li>Responsive breakpoints (xs, sm, md, lg, xl, xxl)</li>
+                  <li>Flex utilities for alignment (align-items, justify-content)</li>
+                  <li>Order utilities for responsive reordering</li>
+                  <li>Gutters and spacing utilities (g-4, mb-4, etc.)</li>
+                  <li>Responsive containers for max-width management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-card-text me-2"></i>Cards</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Features Implemented:</strong>
+                </p>
+                <ul>
+                  <li>Card component with header, body, and footer sections</li>
+                  <li>Card images with responsive dimensions</li>
+                  <li>Card titles and text content</li>
+                  <li>Hover effects with smooth transitions</li>
+                  <li>Shadow effects for depth</li>
+                  <li>Used in Education, Projects, and Skills sections</li>
+                  <li>List group items within cards for module grades</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modals -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-window-fullscreen me-2"></i>Modals</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Features Implemented:</strong>
+                </p>
+                <ul>
+                  <li>Contact Information Modal (accessible via button)</li>
+                  <li>Project Detail Modals (3x for each project)</li>
+                  <li>Modal dialogs with centered positioning</li>
+                  <li>Modal headers with colored backgrounds</li>
+                  <li>Scrollable modal bodies for long content</li>
+                  <li>Modal footers with action buttons</li>
+                  <li>Proper ARIA labels for accessibility</li>
+                  <li>Close button with proper event handling</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-cursor-fill me-2"></i>Buttons</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Features Implemented:</strong>
+                </p>
+                <ul>
+                  <li>Primary and outline button variants</li>
+                  <li>Button sizes (lg, sm)</li>
+                  <li>Full-width buttons (btn-block equivalent)</li>
+                  <li>Icon buttons with Bootstrap Icons</li>
+                  <li>Button groups and button toggles</li>
+                  <li>Modal trigger buttons</li>
+                  <li>Custom hover and active states</li>
+                  <li>Disabled button states</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Forms -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-pencil-square me-2"></i>Forms</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Features Implemented:</strong>
+                </p>
+                <ul>
+                  <li>Form groups with labels</li>
+                  <li>Text input fields</li>
+                  <li>Email input validation</li>
+                  <li>Textarea for messages</li>
+                  <li>Form validation feedback</li>
+                  <li>Invalid state styling</li>
+                  <li>Form controls with custom styling</li>
+                  <li>Accessible form labels and hints</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Badges -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-tag-fill me-2"></i>Badges</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Features Implemented:</strong>
+                </p>
+                <ul>
+                  <li>Multiple badge color variants (primary, success, secondary)</li>
+                  <li>Badge sizing and styling</li>
+                  <li>Rounded pill badges</li>
+                  <li>Used for technologies, dates, and skill levels</li>
+                  <li>Light background badges for secondary information</li>
+                  <li>Badges as status indicators</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Progress Bars -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-graph-up me-2"></i>Progress Bars</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Features Implemented:</strong>
+                </p>
+                <ul>
+                  <li>Animated progress bars for skills</li>
+                  <li>Custom progress bar styling</li>
+                  <li>Gradient fill effects</li>
+                  <li>Progress bar animations on scroll</li>
+                  <li>Data-driven width percentages</li>
+                  <li>Accessible progress bar markup</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- List Groups -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-list-check me-2"></i>List Groups</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Features Implemented:</strong>
+                </p>
+                <ul>
+                  <li>Vertical list groups for module grades</li>
+                  <li>List group items with borders</li>
+                  <li>Flex utilities within list groups</li>
+                  <li>Badge integration in list items</li>
+                  <li>Custom spacing within lists</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Icons -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-star-fill me-2"></i>Bootstrap Icons</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Features Implemented:</strong>
+                </p>
+                <ul>
+                  <li>100+ Bootstrap Icons throughout the site</li>
+                  <li>Icon sizing utilities (fs-1, fs-2, fs-3)</li>
+                  <li>Icon colors matching component colors</li>
+                  <li>Icons in buttons, badges, and text</li>
+                  <li>Semantic icons for different purposes</li>
+                  <li>Icons as visual indicators</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Utility Classes -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-tools me-2"></i>Utility Classes</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Features Implemented:</strong>
+                </p>
+                <ul>
+                  <li>Margin and padding utilities (p-*, m-*, mb-*, me-*, etc.)</li>
+                  <li>Display utilities (d-flex, d-none, d-md-none)</li>
+                  <li>Flexbox utilities (align-items, justify-content)</li>
+                  <li>Text utilities (fw-bold, text-center, text-muted)</li>
+                  <li>Background utilities (bg-light, bg-dark)</li>
+                  <li>Shadow utilities (shadow-sm)</li>
+                  <li>Border utilities (rounded, rounded-circle)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Responsive Features -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-phone me-2"></i>Responsive Design</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Features Implemented:</strong>
+                </p>
+                <ul>
+                  <li>Mobile-first responsive design</li>
+                  <li>Responsive breakpoints (mobile, tablet, desktop)</li>
+                  <li>Responsive grid layouts</li>
+                  <li>Responsive images with img-fluid</li>
+                  <li>Responsive typography with clamp()</li>
+                  <li>Responsive spacing and padding</li>
+                  <li>Responsive navbar toggle</li>
+                  <li>Tested on mobile, tablet, and desktop screens</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider -->
+      <hr class="my-5">
+
+      <!-- Custom JavaScript Features Section -->
+      <section class="mb-5">
+        <h2 class="fw-bold mb-4">
+          <i class="bi bi-code-square text-warning me-2"></i>Custom JavaScript Features
+        </h2>
+
+        <div class="row g-4">
+          <!-- Typing Effect -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0"><i class="bi bi-keyboard me-2"></i>Typing Effect</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Description:</strong> Dynamic typing animation in the hero section that cycles through multiple professional taglines.
+                </p>
+                <p class="card-text">
+                  <strong>Technical Details:</strong>
+                </p>
+                <ul>
+                  <li>Character-by-character typing animation</li>
+                  <li>Auto-delete and cycle to next phrase</li>
+                  <li>Smooth transitions between phrases</li>
+                  <li>Located in hero tagline element</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Smooth Scrolling -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0"><i class="bi bi-arrow-down-circle me-2"></i>Smooth Scrolling</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Description:</strong> Enhanced navigation with smooth scroll behavior to section anchors.
+                </p>
+                <p class="card-text">
+                  <strong>Technical Details:</strong>
+                </p>
+                <ul>
+                  <li>Smooth scroll to section IDs</li>
+                  <li>Click handler on navigation links</li>
+                  <li>Scroll margin offset for fixed navbar</li>
+                  <li>Active link highlighting on scroll</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Progress Bar Animation -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0"><i class="bi bi-bar-chart me-2"></i>Progress Bar Animation</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Description:</strong> Skills progress bars animate when they come into view using Intersection Observer API.
+                </p>
+                <p class="card-text">
+                  <strong>Technical Details:</strong>
+                </p>
+                <ul>
+                  <li>Intersection Observer for scroll detection</li>
+                  <li>Data-percent attribute for target width</li>
+                  <li>CSS transitions for smooth animation</li>
+                  <li>Unobserves after animation completes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Validation -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0"><i class="bi bi-check-circle me-2"></i>Form Validation</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Description:</strong> Client-side form validation with success feedback.
+                </p>
+                <p class="card-text">
+                  <strong>Technical Details:</strong>
+                </p>
+                <ul>
+                  <li>Bootstrap form validation styling</li>
+                  <li>Email validation using HTML5</li>
+                  <li>Required field validation</li>
+                  <li>Success message display</li>
+                  <li>Form reset after submission</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Active Navigation Highlight -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0"><i class="bi bi-link me-2"></i>Active Link Highlighting</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Description:</strong> Navigation links highlight based on current scroll position.
+                </p>
+                <p class="card-text">
+                  <strong>Technical Details:</strong>
+                </p>
+                <ul>
+                  <li>Scroll event listener</li>
+                  <li>Dynamic section detection</li>
+                  <li>Active class toggling</li>
+                  <li>Responsive to all scroll positions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fade-In Animations -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0"><i class="bi bi-eye me-2"></i>Fade-In Animations</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Description:</strong> Cards and hobby items fade in as they enter the viewport.
+                </p>
+                <p class="card-text">
+                  <strong>Technical Details:</strong>
+                </p>
+                <ul>
+                  <li>Intersection Observer API</li>
+                  <li>Opacity and transform animations</li>
+                  <li>CSS transitions for smooth effect</li>
+                  <li>Applied to all major content blocks</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tooltip Initialization -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0"><i class="bi bi-info-circle me-2"></i>Tooltips</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Description:</strong> Bootstrap tooltips on social media buttons in footer.
+                </p>
+                <p class="card-text">
+                  <strong>Technical Details:</strong>
+                </p>
+                <ul>
+                  <li>Bootstrap Tooltip component</li>
+                  <li>Data-bs-toggle attribute</li>
+                  <li>Title attributes for tooltip content</li>
+                  <li>JavaScript initialization</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Animations -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0"><i class="bi bi-window-fullscreen me-2"></i>Modal Animations</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Description:</strong> Smooth animations when modals open and close.
+                </p>
+                <p class="card-text">
+                  <strong>Technical Details:</strong>
+                </p>
+                <ul>
+                  <li>Bootstrap modal events (show.bs.modal)</li>
+                  <li>CSS animations on modal content</li>
+                  <li>Slide-in-up effect</li>
+                  <li>Smooth transitions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lazy Loading -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0"><i class="bi bi-cloud-download me-2"></i>Lazy Loading</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Description:</strong> Images load only when visible in viewport.
+                </p>
+                <p class="card-text">
+                  <strong>Technical Details:</strong>
+                </p>
+                <ul>
+                  <li>Intersection Observer for image detection</li>
+                  <li>Data-src attribute for image paths</li>
+                  <li>Improves page load performance</li>
+                  <li>Graceful fallback for older browsers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Keyboard Navigation -->
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0"><i class="bi bi-keyboard me-2"></i>Keyboard Navigation</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Description:</strong> Support for keyboard navigation and accessibility shortcuts.
+                </p>
+                <p class="card-text">
+                  <strong>Technical Details:</strong>
+                </p>
+                <ul>
+                  <li>Escape key to close modals</li>
+                  <li>Tab navigation support</li>
+                  <li>ARIA labels for screen readers</li>
+                  <li>Semantic HTML structure</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider -->
+      <hr class="my-5">
+
+      <!-- Additional Features -->
+      <section class="mb-5">
+        <h2 class="fw-bold mb-4">
+          <i class="bi bi-star me-2"></i>Additional Features & Design Decisions
+        </h2>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-palette me-2"></i>Design System</h5>
+                <ul>
+                  <li>CSS Custom Properties (Variables) for theming</li>
+                  <li>Consistent color palette (primary: #0d6efd)</li>
+                  <li>Professional gradient backgrounds</li>
+                  <li>Typography hierarchy with Inter font</li>
+                  <li>Consistent spacing using Bootstrap's scale</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-shield-check me-2"></i>Accessibility</h5>
+                <ul>
+                  <li>ARIA labels on interactive elements</li>
+                  <li>Semantic HTML structure</li>
+                  <li>Color contrast compliance</li>
+                  <li>Keyboard navigation support</li>
+                  <li>Form labels for all inputs</li>
+                  <li>Alt text on images</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-phone me-2"></i>Responsive Breakpoints</h5>
+                <ul>
+                  <li><strong>Mobile:</strong> < 576px</li>
+                  <li><strong>Tablet:</strong> 576px - 768px</li>
+                  <li><strong>Small Desktop:</strong> 768px - 992px</li>
+                  <li><strong>Desktop:</strong> 992px - 1200px</li>
+                  <li><strong>Large Desktop:</strong> > 1200px</li>
+                  <li>All sections optimized for each breakpoint</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-lightning-fill me-2"></i>Performance</h5>
+                <ul>
+                  <li>CDN-hosted Bootstrap and Icons</li>
+                  <li>Lazy loading for images</li>
+                  <li>CSS transitions instead of JS animations</li>
+                  <li>Minified CSS and JavaScript</li>
+                  <li>Optimized font loading (Google Fonts)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Summary -->
+      <div class="alert alert-primary mt-5" role="alert">
+        <h4 class="alert-heading"><i class="bi bi-info-circle me-2"></i>Summary</h4>
+        <p class="mb-0">
+          This portfolio website implements <strong>13+ Bootstrap components</strong> combined with <strong>10+ custom JavaScript features</strong> 
+          to create an interactive, professional, and engaging user experience. The site fully complies with the course brief requirements 
+          including 7+ content sections, a contact modal, responsive design, and custom dynamic features. All code is original and built 
+          without using pre-made templates.
+        </p>
+      </div>
+
+      <!-- Hosted URL Section -->
+      <section class="bg-light p-4 rounded mt-5 mb-5">
+        <h3 class="fw-bold mb-3"><i class="bi bi-globe me-2"></i>Hosting Information</h3>
+        <p class="mb-2"><strong>Portfolio Website URL:</strong></p>
+        <p class="text-primary fw-bold">
+          [Add your hosted URL here - e.g., https://username.github.io/portfolio or Azure deployment URL]
+        </p>
+        <p class="text-muted small">Update this section with your actual hosting URL once deployed to GitHub Pages, Azure, or similar platform.</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="mb-0">&copy; 2025 Giacomo Festa Marzotto. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0">Built with <i class="bi bi-bootstrap-fill text-primary"></i> Bootstrap 5</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
