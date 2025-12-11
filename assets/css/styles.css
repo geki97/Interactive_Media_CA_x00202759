@@ -190,6 +190,18 @@ body {
     background: white;
     color: var(--primary-color);
 }
+/* Solid social button used where a true primary-coloured button is needed
+   (keeps hero buttons styled as before while making social buttons visible) */
+.btn-social {
+    background: var(--primary-color) !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(13,110,253,0.15);
+}
+.btn-social:hover {
+    background: #0b5ed7 !important;
+    color: #fff !important;
+}
 
 /* ===== SECTIONS STYLING ===== */
 section {
